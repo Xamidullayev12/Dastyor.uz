@@ -1,0 +1,128 @@
+.section_cards {
+    width: 100%;
+}
+
+.sec_cards_container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.sec_cards_title {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Montserrat;
+    text-align: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sec_cards_title_2 {
+    font-family: Inter;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.sec_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image_card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 calc(100% / 3 - 7px);
+    flex: 0 1 calc(100% / 3 - 7px);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.image_card img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec_cards_btn {
+    width: 100%;
+    height: 204px;
+    position: absolute;
+    background: linear-gradient(180deg,
+     rgba(255, 255, 255, 0) 9.36%,
+     #FFFFFF 79.31%);
+     bottom: 0px;
+}
+
+.sec_cards_btn button {
+    padding:  6px 28px 18px 36px;
+    border-radius: 50px;
+    background-color: #1F56D5;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+.sec_cards_btn button i{
+    position: relative;
+    top: 8px;
+    left: 4px;
+    font-size: 26px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .sec_cards {
+        display: flex;
+        width: 100%;
+    }
+
+    .image_card {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% / 2 - 5px);
+        flex: 0 1 calc(100% / 2 - 5px);
+        margin-bottom: 10px;
+    }
+
+    .sec_cards_btn button {
+        position: relative;
+        right: 470px;
+        width: 176px;
+        padding: 6px ​0px 18px 4px;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+
+    .sec_cards {
+        display: block;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .image_card  {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% / 1 - 5px);
+        flex: 0 1 calc(100% / 1 - 5px);
+    }
+}
+
